@@ -215,6 +215,8 @@ h3 {
   inset: 0;
   display: none;
   z-index: 50;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal[aria-hidden="false"] {
@@ -231,11 +233,11 @@ h3 {
   position: relative;
   background: #fff;
   width: min(980px, 92vw);
-  margin: 6vh auto;
+  margin: 6vh auto 8vh;
   border: 1px solid var(--line);
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
-  max-height: 88vh;
-  overflow: auto;
+  max-height: calc(100vh - 8vh);
+  overflow: visible;
 }
 
 .modal-content {
@@ -243,6 +245,8 @@ h3 {
   grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
   gap: 1.5rem;
   padding: 2rem;
+  max-height: calc(100vh - 12vh);
+  overflow: auto;
 }
 
 .modal-text h3 {
