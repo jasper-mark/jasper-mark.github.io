@@ -33,7 +33,7 @@
           >
             <img src="google_scholar_icon.png" alt="" />
           </a>
-          <a class="icon-link" href="https://github.com/jimark13" aria-label="GitHub">
+          <a class="icon-link" href="https://github.com/jasper-mark" aria-label="GitHub">
             <img src="github_icon.png" alt="" />
           </a>
           <a class="icon-link" href="https://www.linkedin.com/in/jasper-mark/" aria-label="LinkedIn">
@@ -69,7 +69,30 @@
               Interpretable network and coherence-based methods for modeling multiscale dependencies
               in nonstationary systems.
             </p>
-            <a class="card-link" href="#contact">Read more →</a>
+            <details class="project-details">
+              <summary>Read more →</summary>
+              <div class="project-full">
+                <p>
+                  I developed a quantitative framework for characterizing how hierarchical
+                  dependencies emerge and reorganize in large-scale, interacting networks following
+                  perturbation. Using multimodal time-series data, I apply network-based, coherence,
+                  and cross-frequency methods to quantify how slow, higher-order dynamics modulate
+                  faster subsystem activity across space and time. This approach captures
+                  hierarchical control processes that are invisible to static connectivity or
+                  single-scale analyses.
+                </p>
+                <p>
+                  A central contribution of this work is the development of phase-modulated
+                  corticomuscular coherence (pmCMC), a novel metric that integrates network-level
+                  connectivity with time-resolved coordination. Applied to longitudinal datasets,
+                  pmCMC distinguishes adaptive versus maladaptive reorganization and selectively
+                  relates to system-level performance outcomes. More broadly, this project focuses on
+                  building mechanistically interpretable biomarkers that describe nonstationary
+                  dynamics in complex systems rather than treating connectivity as static or
+                  homogeneous.
+                </p>
+              </div>
+            </details>
           </article>
 
           <article class="project-card">
@@ -79,7 +102,29 @@
               A recurrent neural architecture that disentangles short- and long-horizon dynamics in
               mixed-timescale time-series data.
             </p>
-            <a class="card-link" href="#contact">Read more →</a>
+            <details class="project-details">
+              <summary>Read more →</summary>
+              <div class="project-full">
+                <p>
+                  I designed a novel recurrent neural network architecture to address a fundamental
+                  limitation of standard sequence models: the entanglement of short- and long-horizon
+                  dependencies within a single memory state. Many real-world time-series exhibit
+                  mixed temporal structure, where fast transients coexist with slow, drifting
+                  baselines—conditions under which conventional LSTMs often struggle.
+                </p>
+                <p>
+                  The Truncated–Shuffled Dual-State LSTM (RS-D LSTM) explicitly separates memory into
+                  short-term and long-term states, each governed by independent learnable time
+                  constants. This design allows the model to allocate representational capacity
+                  across timescales on a per-dimension basis. In direct comparisons with
+                  parameter-matched LSTMs on large-scale EEG datasets, the RS-D LSTM achieved
+                  substantial gains in predictive performance across multiple classification tasks.
+                  Beyond accuracy, the architecture exposes interpretable parameters that reveal how
+                  information is retained across timescales, bridging predictive modeling with
+                  insight into underlying signal structure.
+                </p>
+              </div>
+            </details>
           </article>
 
           <article class="project-card">
@@ -89,7 +134,29 @@
               Real-time biofeedback and operant conditioning to optimize latent connectivity signals
               in closed-loop systems.
             </p>
-            <a class="card-link" href="#contact">Read more →</a>
+            <details class="project-details">
+              <summary>Read more →</summary>
+              <div class="project-full">
+                <p>
+                  I am leading a real-time study that treats functional connectivity itself as a
+                  learnable control signal, using operant conditioning to enhance corticomuscular
+                  coherence (CMC) through biofeedback. The system integrates high-density EEG and
+                  EMG with low-latency signal processing to compute beta-band CMC online during a
+                  precision motor task, enabling trial-by-trial feedback based on instantaneous
+                  network coupling rather than behavior alone.
+                </p>
+                <p>
+                  Participants receive adaptive feedback and rewards contingent on increases in
+                  connectivity relative to a dynamic baseline, allowing intrinsic neural signals to
+                  drive learning in a closed-loop setting. To validate the physiological relevance
+                  of conditioning-induced changes, biofeedback is paired with pre/post transcranial
+                  magnetic stimulation to assess changes in corticospinal excitability. This project
+                  provides a general framework for online inference, feedback, and control in noisy,
+                  nonstationary systems, where learning emerges from internal dynamics rather than
+                  external supervision.
+                </p>
+              </div>
+            </details>
           </article>
 
           <article class="project-card">
@@ -99,7 +166,28 @@
               Robust, interpretable classification from sparse EMG signals under strict sensing and
               computational constraints.
             </p>
-            <a class="card-link" href="#contact">Read more →</a>
+            <details class="project-details">
+              <summary>Read more →</summary>
+              <div class="project-full">
+                <p>
+                  I developed an interpretable machine-learning system that maps four-channel
+                  surface EMG to American Sign Language gestures under strict sensing and
+                  computational constraints. Rather than relying on high-dimensional representations
+                  or deep architectures, this work emphasizes physiologically grounded feature
+                  engineering and support vector machine (SVM) classifiers to achieve robust
+                  performance across users and sessions.
+                </p>
+                <p>
+                  This project highlights a complementary modeling philosophy: when data are sparse
+                  and resources are limited, carefully designed features and classical models can
+                  outperform more complex approaches. The system prioritizes interpretability,
+                  robustness, and deployability, illustrating how meaningful structure can be
+                  extracted from low-dimensional signals without sacrificing performance. It
+                  reflects my broader interest in constraint-aware learning, where modeling choices
+                  are shaped by real-world limitations rather than idealized assumptions.
+                </p>
+              </div>
+            </details>
           </article>
 
           <article class="project-card">
@@ -109,7 +197,35 @@
               Low-latency convolutional models for denoising nonstationary audio under real-world
               deployment constraints.
             </p>
-            <a class="card-link" href="#contact">Read more →</a>
+            <details class="project-details">
+              <summary>Read more →</summary>
+              <div class="project-full">
+                <p>
+                  I developed a machine-learning pipeline for real-time speech enhancement designed
+                  to operate under the strict latency and computational constraints required for
+                  mobile and assistive hearing technologies. The system uses convolutional neural
+                  networks (CNNs) to map noisy speech spectrograms to cleaned representations,
+                  improving intelligibility while remaining lightweight enough for real-time
+                  deployment on resource-limited devices.
+                </p>
+                <p>
+                  The model was trained on paired clean and noisy speech generated by mixing the ARU
+                  Speech Corpus with diverse real-world noise environments (e.g., traffic, machinery,
+                  and babble). Inputs consisted of short-time spectrogram and mel-frequency features
+                  spanning a small temporal context, enabling the network to denoise speech with
+                  minimal buffering and low algorithmic delay. Performance was evaluated using
+                  perceptual and signal-based metrics, including PESQ, log spectral distance (LSD),
+                  and segmental SNR, demonstrating consistent improvements across noise conditions.
+                </p>
+                <p>
+                  A key emphasis of this project was constraint-aware model design: prioritizing
+                  simple architectures, low-latency inference, and robustness over depth or parameter
+                  count. The resulting system illustrates how carefully structured deep learning
+                  models can achieve meaningful gains in signal quality while remaining suitable for
+                  embedded or smartphone-based applications.
+                </p>
+              </div>
+            </details>
           </article>
         </div>
       </section>

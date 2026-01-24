@@ -190,17 +190,35 @@ h3 {
   color: var(--muted);
 }
 
-.card-link {
-  align-self: flex-start;
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  font-size: 0.95rem;
+.project-details {
+  margin-top: 0.2rem;
 }
 
-.card-link:hover,
-.card-link:focus {
+.project-details summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary:hover,
+.project-details summary:focus {
   border-color: var(--accent);
+}
+
+.project-full {
+  margin-top: 0.8rem;
+  color: var(--ink);
+}
+
+.project-full p {
+  margin: 0 0 0.8rem;
 }
 
 .role-head {
