@@ -80,6 +80,37 @@ body {
   font-size: 0.95rem;
 }
 
+.links {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.icon-link {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  transition: transform 120ms ease, border-color 120ms ease;
+}
+
+.icon-link img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
 .nav a {
   color: var(--ink);
   text-decoration: none;
@@ -166,6 +197,19 @@ ol.pubs li {
 .button:focus {
   background: var(--accent);
   color: #fff;
+}
+
+.cv-frame {
+  border: 1px solid var(--line);
+  background: #fff;
+  height: 78vh;
+  margin-top: 1rem;
+}
+
+.cv-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .site-footer {
