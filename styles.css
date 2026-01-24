@@ -190,35 +190,88 @@ h3 {
   color: var(--muted);
 }
 
-.project-details {
-  margin-top: 0.2rem;
-}
-
-.project-details summary {
-  list-style: none;
-  cursor: pointer;
+.card-link {
+  align-self: flex-start;
   color: var(--accent);
-  font-size: 0.95rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
   border-bottom: 1px solid transparent;
-  display: inline-block;
+  font-size: 0.95rem;
 }
 
-.project-details summary::-webkit-details-marker {
-  display: none;
-}
-
-.project-details summary:hover,
-.project-details summary:focus {
+.card-link:hover,
+.card-link:focus {
   border-color: var(--accent);
 }
 
 .project-full {
-  margin-top: 0.8rem;
   color: var(--ink);
 }
 
-.project-full p {
-  margin: 0 0 0.8rem;
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 50;
+}
+
+.modal[aria-hidden="false"] {
+  display: block;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.modal-dialog {
+  position: relative;
+  background: #fff;
+  width: min(980px, 92vw);
+  margin: 6vh auto;
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.modal-text h3 {
+  margin-top: 0;
+}
+
+.modal-text p {
+  margin: 0 0 0.9rem;
+}
+
+.modal-media img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 .role-head {
@@ -302,4 +355,7 @@ ol.pubs li {
     grid-template-columns: 1fr;
   }
 
+  .modal-content {
+    grid-template-columns: 1fr;
+  }
 }
