@@ -157,6 +157,34 @@ h3 {
   border-bottom: none;
 }
 
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.5rem 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.project:last-of-type {
+  border-bottom: none;
+}
+
+.project h3 {
+  margin-bottom: 0.6rem;
+}
+
+.project p {
+  margin: 0 0 0.8rem;
+}
+
+.project-media img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
 .role-head {
   display: grid;
   gap: 0.25rem;
@@ -204,6 +232,7 @@ ol.pubs li {
   grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
   gap: 1.5rem;
   align-items: start;
+  margin-top: 1.5rem;
 }
 
 .cv-frame {
@@ -234,6 +263,10 @@ ol.pubs li {
   }
 
   .cv-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
     grid-template-columns: 1fr;
   }
 }
